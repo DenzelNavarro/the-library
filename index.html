@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div class="form">
+        <h1>My Library</h1>
+
+        <table class="table">
+            <tr class="table-title">
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Year</th>
+                <th>Status</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+
+        <button id="add-book">+</button>
+    </div>
+
+    <dialog id="dialog">
+        <form action="post" id="form" method="dialog" class="dialog-form">
+    
+            <div>
+                <label for="form-title">Title</label>
+                <input type="text" name="title" id="form-title" autofocus>
+            </div>
+    
+            <div>
+                <label for="form-author">Author</label>
+                <input type="text" name="author" id="form-author">
+            </div>
+    
+            <div>
+                <label for="form-pages">Pages</label>
+                <input type="number" name="pages" id="form-pages">
+            </div>
+    
+            <div>
+                <label for="form-year">Year</label>
+                <input type="number" name="year" id="form-year">
+            </div>
+    
+            <div>
+                <label for="form-status">Status</label>
+                <select name="status" id="form-status">
+                    <option value="finished">Finished</option>
+                    <option value="reading">Reading</option>
+                </select>
+            </div>                     
+    
+            <button type="submit">Submit</button>
+            <button id="cancel-button">Cancel</button>
+    
+        </form>
+    </dialog>
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
